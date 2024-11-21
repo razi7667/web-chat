@@ -1,2 +1,1 @@
-Flask==2.x.x
-Flask-SocketIO==5.x.x
+Flask==2.3.3
