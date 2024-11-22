@@ -11,17 +11,17 @@
         <div id="chat-box" class="chat-box">
             <!-- Messages will appear here -->
         </div>
+        <div id="typing-indicator"></div>
         <div class="input-area">
             <input type="text" id="message-input" placeholder="Type a message..." />
             <button id="send-btn">Send</button>
         </div>
     </div>
-
+    <script src="script.js"></script>
     <script src="https://cdn.socket.io/4.5.1/socket.io.min.js"></script>
     <script src="../static/script.js"></script>
-    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
     <script>
-        const socket = io('https://your-app-name.onrender.com'); // Ensure this is the correct URL
+        const socket = io('https://c295-2402-3a80-4492-6a23-6c77-beba-45d4-e088.ngrok-free.app/'); // Ensure this is the correct URL
         socket.on('connect', () => {
         console.log('Connected to server');
         });

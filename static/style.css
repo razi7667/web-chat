@@ -15,6 +15,7 @@ body {
     flex-direction: column;
 }
 
+
 /* Chat container styling */
 .chat-container {
     width: 100%;
@@ -26,6 +27,16 @@ body {
     display: flex;
     flex-direction: column;
     height: 70vh;
+}
+
+/* Typing indicator styling */
+#typing-indicator {
+    padding: 10px;
+    font-size: 0.9em;
+    color: #888;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 2px solid #f0f0f0;
 }
 
 /* Chat box styling */

@@ -25,6 +25,14 @@ const sendMessage = () => {
     }
 };
 
+socket.on('typing', (data) => {
+    if (data.typing) {
+        typingIndicator.innerText = `${data.username} is typing...`;
+    } else {
+        typingIndicator.innerText = ''; // Hide typing indicator
+    }
+});
+
 // Add event listener for Send button click
 sendButton.addEventListener('click', sendMessage);
 
@@ -70,3 +78,4 @@ socket.on('typing', (data) => {
         typingIndicator.innerText = ''; // Hide typing indicator when typing stops
     }
 });
+
